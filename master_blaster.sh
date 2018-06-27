@@ -157,7 +157,7 @@ fi
 # Read all of the command-line arguments into a variable
 # Split the query file into multiple temporary files for blasting
 if [ "$QUERY" ]; then
-    srun $SPLIT_SCRIPT -q $QUERY -t "$workign_dir$TEMP" --numProcs $NUMPROCS
+    srun $SPLIT_SCRIPT -q $QUERY -t "$working_dir$TEMP" --numProcs $NUMPROCS
 else
     srun echo "Fasta query file must be provided for script to execute."
     exit 1
